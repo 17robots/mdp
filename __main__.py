@@ -5,7 +5,7 @@ die_roll = 0
 
 while die_roll != 1 and die_roll != 2:
     print("1. Stay")
-    print("1. Quit")
+    print("2. Quit")
     val = -1
     try:
         val = input("Select 1 or 2: ")
@@ -17,6 +17,7 @@ while die_roll != 1 and die_roll != 2:
         else:
             reward = reward + 4
             die_roll = random.randint(1,6)
+            print(f'you rolled a {die_roll}')
     except KeyboardInterrupt:
         quit()
     except:
